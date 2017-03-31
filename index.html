@@ -1,0 +1,24 @@
+<html ng-app="githubViewer">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<title></title>
+</head>
+<body ng-controller="MainController">
+	<h1>{{ message }}</h1>
+
+	<div>{{ error }}</div>
+
+	{{ countdown }}
+	<div>
+		<form ng-submit="search(username)">
+			<input type="search" required placeholder="username to find" ng-model="username">
+			<input type="submit" value="search">
+		</form>
+		
+	</div>
+
+	<div ng-include="'userdetails.html'" ng-show="user"></div>
+
+</body>
+</html>
