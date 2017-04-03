@@ -1,8 +1,8 @@
-	<div id="userDetails">
+	<div>
 		<div>Name: {{ user.name }}</div>
 		<div>Location: {{ user.location }}</div>
 	</div>
-
+	{{ error }}
 	<div>
 		<img ng-src="{{user.avatar_url}}" title="{{user.name}}">
 	</div>
@@ -30,3 +30,5 @@
 			</tr>
 		</tbody>
 	</table>
+
+	<a href="#!/main">Back to search</a>
